@@ -94,7 +94,9 @@
 
   .navegation-auto div{
       border: 2px solid #28a6ff;
-      padding: ;
+      padding: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
       border-radius: 10px;
     }
 
