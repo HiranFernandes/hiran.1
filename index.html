@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - DM Espaço Beauty</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="nav container">
+        <div class="brand">
+            <div class="logo">DM</div>
+            <strong>DM Espaço Beauty</strong>
+        </div>
+        <div>
+            <a onclick="irPara('servicos')">Serviços</a>
+            <a onclick="irPara('galeria')">Galeria</a>
+            <a onclick="irPara('sobre')">Sobre</a>
+            <a class="cta" onclick="irPara('agendar')">Agendar</a>
+            
+        </div>
+    </nav>
+</header>
+<main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Bem-vinda ao seu momento</div>
+        <h1>Transformamos seu visual com carinho e técnica</h1>
+        <p class="lead">Cortes, coloração, manicure, design de sobrancelhas e tratamentos capilares usando produtos profissionais. Equipe qualificada e ambiente relaxante.</p>
+        <div class="hero-actions">
+          <a class="cta" href="#contato">Agende agora</a>
+          <a href="#servicos" style="padding:.55rem .9rem;border-radius:10px;background:transparent;border:1px solid rgba(0,0,0,0.06);">Nossos serviços</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+
+       
+    <div class="img-1">
+
+      <img src="./imagens/9524434.jpg"/>
+
+    </div>
+
+    </section>
+
+    <div class="slider">
+
+      <div class="slides">
+        <!-- Radio buttons -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">          
+        <!-- Fim Radio buttons -->
+           
+        <!-- Slides Images-->
+        <div class="slide first">
+          <img src="./imagens/sobrancelha2.jpg" alt="imagem1"/>
+        </div>
+
+        <div class="slide">
+          <img src="./imagens/kateryn.jpg" alt="imagem2"/>  
+        </div>
+
+        <div class="slide">
+          <img src="./imagens/cabelos.jpg" alt="imagem3"/>  
+        </div>
+
+        <div class="slide">
+          <img src="./imagens/manicure.jpg" alt="imagem4"/>
+        </div>
+
+        <div class="slide">
+          <img src="./imagens/labios.jpg" alt="imagem5"/>  
+        </div>
+        <!-- Fim Slides Images-->
+
+        <!-- Navigation auto-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+        </div>
+
+      </div>
+
+        
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+      </div>
+
+    </div>     
+
+      
+    
+    <script src="script.js"></script>
+    
+    <section id="galeria" class="gallery" aria-label="Galeria de serviços">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=0a1f8c6c1c2a3b5d6e7f8a9b0c1d2e3f" alt="Cabelo loiro com mechas"/>
+      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d" alt="Manicure profissional"/>
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3c2b1a0f9e8d7c6b5a4f3e2d1c0b9a8f" alt="Tratamento capilar"/>
+    </section>
+
+    <div>
+      
+    </div>
+
+    <div class="grid-2">
+      <section id="Sobre" class="card">
+        <h3>Sobre nós</h3>
+        <p class="muted">Fundado em 2015, o Salão Bella Flor une técnica e atendimento caloroso. Nossa missão é fazer com que cada cliente saia mais confiante — seja com um corte moderno ou um tratamento relaxante.</p>
+        <ul style="margin:.5rem 0 0;padding-left:1.1rem;color:var(--muted)">
+          <li>Profissionais certificados</li>
+          <li>Produtos veganos e cruelty-free (quando possível)</li>
+          <li>Ambiente climatizado e acessível</li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="team-title">
+        <h3 id="team-title">Nossa equipe</h3>
+        <div style="display:flex;gap:.75rem;align-items:center;margin-top:.6rem">
+          <div style="width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#ff9ac2,#ffd1e8);display:flex;align-items:center;justify-content:center;font-weight:700">AL</div>
+          <div>
+            <div style="font-weight:700">Alice Mendes — Cabeleireira-chefe</div>
+            <div style="color:var(--muted);font-size:.95rem">Especialista em cortes e coloração</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="contato" class="contact-grid">
+      <div class="card">
+        <h3>Agende seu horário</h3>
+        <p class="muted">Preencha o formulário e retornaremos com a confirmação do agendamento.</p>
+        <form action="#" onsubmit="event.preventDefault();alert('Obrigado! Recebemos sua solicitação.');">
+          <label class="muted">Nome</label>
+          <input type="text" placeholder="Seu nome" required>
+
+          <label class="muted">Telefone</label>
+          <input type="tel" placeholder="(00) 00000-0000" required>
+
+          <label class="muted">Serviço</label>
+          <select>
+            <option>Corte</option>
+            <option>Coloração</option>
+            <option>Manicure</option>
+            <option>Tratamento</option>
+          </select>
+
+          <label class="muted">Mensagem</label>
+          <textarea placeholder="Deseja horário preferencial? Informe dia/horário."></textarea>
+
+          <button type="submit">Enviar pedido</button>
+        </form>
+      </div>
+
+      <aside class="card">
+        <h4>Informações</h4>
+        <p class="muted" style="margin:0.25rem 0">Endereço: Rua das Flores, 123 · Centro</p>
+        <p class="muted" style="margin:0.25rem 0">Telefone: (11) 99999-9999</p>
+        <p class="muted" style="margin:0.25rem 0">Horário: Ter–Sex 09:00–19:00 · Sáb 09:00–15:00</p>
+        <div style="margin-top:1rem">
+          <div class="chip">Promoção: 10% na primeira visita</div>
+        </div>
+      </aside>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
+      <div>© <strong>DM Espaço Beauty</strong> — Todos os direitos reservados</div>
+      <div style="color:var(--muted)">Feito com cuidado — Agende pelo telefone ou formulário</div>
+    </div>
+  </footer>
+
+</body>
+</html>
